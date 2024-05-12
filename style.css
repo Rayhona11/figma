@@ -2,12 +2,219 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+body .logo {
+  display: flex;
 }
 
 header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 3% 10%;
+  background-color: #fff;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  box-shadow: 0px 1px 4px 1px;
+}
+header a:hover {
+  cursor: pointer;
+}
+header .menu1 {
+  display: none;
+}
+header .btn1 {
+  background-color: #fff;
+  color: #02897A;
+  border: 1px solid #02897A;
+  padding: 10px 25px;
+  border-radius: 3px;
+}
+header .btn1:hover {
+  background-color: #02897A;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+header .btn2 {
+  padding: 10px 25px;
+  border-radius: 3px;
+  background-color: #02897A;
+  color: #fff;
+  border: none;
+}
+header .btn2:hover {
+  background-color: #fff;
+  color: #02897A;
+  font-size: 18px;
+  cursor: pointer;
+  border: 1px solid #02897A;
+}
+header h1 {
+  color: #173A56;
 }
 header ul {
   display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+header ul i {
+  color: aqua;
+}
+
+/* ? START HERO */
+.hero {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 10%;
+  gap: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.hero .hero-left {
+  margin-bottom: 30px;
+  color: #22343D;
+}
+.hero .hero-left h1 {
+  margin-bottom: 20px;
+  font-size: 55px;
+}
+.hero .hero-left p {
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+.hero .hero-left .btn3 {
+  background: #02897A;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+}
+.hero .hero-left .btn3:hover {
+  background-color: #fff;
+  color: #02897A;
+  border: 1px solid #02897A;
+  font-size: 18px;
+  cursor: pointer;
+}
+.hero .hero-left .btn4 {
+  background-color: transparent;
+  color: #02897A;
+  font-size: 15px;
+  border: none;
+  margin-left: 20px;
+}
+
+/*? CARDS START */
+.cards {
+  display: flex;
+  align-items: center;
+  padding: 5% 11%;
+  justify-content: space-between;
+}
+.cards p {
+  color: #22343D;
+}
+.cards h1 {
+  text-align: center;
+  font-size: 32px;
+}
+.cards .card {
+  max-width: 200px;
+}
+.cards .card img {
+  margin-bottom: 20px;
+}
+.cards .card p {
+  color: #173A56;
+  margin-top: 20px;
+}
+
+.btn5 {
+  background-color: #02897A;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 15px 25px;
+  margin-left: 620px;
+}
+
+.btn5:hover {
+  background-color: #fff;
+  color: #02897A;
+  font-size: 18px;
+  border: 1px solid #02897A;
+  cursor: pointer;
+}
+
+.mains {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 10%;
+}
+.mains .main-text {
+  max-width: 400px;
+  padding: 10px;
+  font-size: 22px;
+}
+
+footer {
+  padding: 2% 10%;
+  background-color: #173A56;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+footer p {
+  text-align: center;
+  margin-top: 20px;
+}
+footer .footer-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  gap: 52px;
+  align-items: center;
+}
+footer form {
+  margin-bottom: 50px;
+}
+footer form input {
+  padding: 10px;
+}
+footer form button {
+  padding: 15px;
+  background-color: #02897A;
+  border: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  header .logo {
+    font-size: 15px;
+  }
+  header .menu1 {
+    display: block;
+  }
+  header button {
+    width: 90px;
+  }
+  header ul {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
